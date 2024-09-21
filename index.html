@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Crafter Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1d2023;
+            ;
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins';
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 83px;
+            background-color: #1463F3;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: #00000086;
+            font-size: 1.4rem;
+
+        }
+
+        .left {
+            font-size: 1.3rem;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 23px 0px;
+
+        }
+
+        .first>div {
+            width: 33%;
+
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+
+        }
+
+        .rightsection img {
+            width: 90%;
+
+        }
+
+        .purple {
+            color: #84A4FC;
+
+        }
+
+        #element {
+            color: #84A4FC;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        hr {
+            border: 0;
+            background: white;
+            height: 1.2px;
+            margin: 30px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Crafter's Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="/">Home
+                        </a></li>
+
+                    <li><a href="about.html">About
+                        </a></li>
+                    <li><a href="/">Services
+                        </a></li>
+
+                    <li><a href="/">Projects
+                        </a></li>
+
+                    <li><a href="/">Contact Me
+                        </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hi,We are <span class="purple">Code Crafters!</span>
+                <div> I am a Web Developer</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="bn.png" alt="">
+            </div>
+        </section>
+        
+
+
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI/UX Designer', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
